@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Avaliada 5</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        var alunos = [
+            {
+                nome: "Luiz Henrique",
+                email: "alunolh@email.com",
+                idade: 12,
+                dataNascimento: "30 de Abril",
+                materias: [
+                    {
+                        prova: "português",
+                        nota: 8
+                    },
+                    {
+                        prova: "matemática",
+                        nota: 10
+                    },
+                    {
+                        prova: "história",
+                        nota: 6
+                    },
+                ]
+            },
+            {
+                nome: "Bruna Maria",
+                email: "alunobm@email.com",
+                idade: 11,
+                dataNascimento: "15 de Agosto",
+                materias: [
+                    {
+                        prova: "português",
+                        nota: 10
+                    },
+                    {
+                        prova: "matemática",
+                        nota: 10
+                    },
+                    {
+                        prova: "história",
+                        nota: 9
+                    },
+
+                ]
+            },
+            {
+                nome: "Pedro Manoel",
+                email: "alunopm@email.com",
+                idade: 14,
+                dataNascimento: "25 de Maio",
+                materias: [
+                    {
+                        prova: "português",
+                        nota: 7
+                    },
+                    {
+                        prova: "matemática",
+                        nota: 7
+                    },
+                    {
+                        prova: "história",
+                        nota: 8
+                    },
+
+                ]
+            },
+        ]
+
+        alunos.push({
+            nome: "Jéssica Alves",
+            email: "alunoja@email.com",
+            idade: 12,
+            dataNascimento: "14 de Outubro",
+            materias: [
+                {
+                    prova: "português",
+                    nota: 9
+                },
+                {
+                    prova: "matemática",
+                    nota: 9
+                },
+                {
+                    prova: "história",
+                    nota: 8
+                },
+
+            ]
+        })
+
+        console.log(alunos)
+
+        var removerAlunoPop = alunos.pop();
+
+        alunoRemovido(removerAlunoPop)
+
+        function alunoRemovido(texto) {
+            console.log("Aluno removido do sistema: ")
+            console.log(texto)
+        }
+
+    </script>
+
+</body>
+
+</html>
